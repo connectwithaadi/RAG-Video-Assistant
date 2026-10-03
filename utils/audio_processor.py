@@ -2,7 +2,7 @@ import yt_dlp
 from pydub import AudioSegment
 import os
 
-DOWNLOAD_DIR = 'downloades'
+DOWNLOAD_DIR = 'downloads'
 os.makedirs(DOWNLOAD_DIR,exist_ok = True)
 
 def download_youtube_audio(url :str) ->str:
@@ -19,7 +19,7 @@ def download_youtube_audio(url :str) ->str:
         ],
         "quiet": True,
 
-        "js_runtime": {
+        "js_runtimes": {
             "node": {}
         },
         "remote_components": ["ejs:github"],
