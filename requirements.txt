@@ -2,7 +2,8 @@
 # Python >= 3.10
 
 # ── Audio / Video acquisition ─────────────────────────────────────────────────
-yt-dlp>=2024.4.9
+yt-dlp[default]
+yt-dlp-ejs
 pydub>=0.25.1
 ffmpeg-python>=0.2.0
 imageio-ffmpeg>=0.6.0
@@ -23,8 +24,6 @@ langchain-community>=0.2.0
 langchain-mistralai>=0.1.0
 mistralai>=0.4.0
 
-
-
 # ── Streamlit UI ──────────────────────────────────────────────────────────────
 streamlit>=1.35.0
 streamlit-extras>=0.4.0
@@ -39,8 +38,6 @@ python-dotenv>=1.0.0
 numpy>=1.26.0
 tqdm>=4.66.0
 requests>=2.32.0
-
-
 
 # ── RAG Pipeline ──────────────────────────────────────────────────────────────
 chromadb>=0.5.0
