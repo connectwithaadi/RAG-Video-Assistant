@@ -22,9 +22,7 @@ def download_youtube_audio(url :str) ->str:
         "js_runtime": {
             "node": {}
         },
-        "remote_components": {
-            "ejs": "github"
-        },
+        "remote_components": ["ejs:github"],
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(url, download=True)
