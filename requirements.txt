@@ -3,7 +3,6 @@
 
 # ── Audio / Video acquisition ─────────────────────────────────────────────────
 yt-dlp[default]
-yt-dlp-ejs
 pydub>=0.25.1
 ffmpeg-python>=0.2.0
 imageio-ffmpeg>=0.6.0
