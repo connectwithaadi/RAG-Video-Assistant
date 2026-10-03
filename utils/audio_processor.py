@@ -70,18 +70,18 @@ def process_input(source: str) -> list:
     return chunks
 
 
-
 import shutil
 import subprocess
 
+print("=== JS RUNTIME CHECK ===")
 print("Node path:", shutil.which("node"))
 
 if shutil.which("node"):
-    print(
-        "Node version:",
-        subprocess.run(
-            ["node", "--version"],
-            capture_output=True,
-            text=True
-        ).stdout
+    result = subprocess.run(
+        ["node", "--version"],
+        capture_output=True,
+        text=True
     )
+    print("Node version:", result.stdout.strip())
+else:
+    print("Node is NOT installed")
