@@ -68,3 +68,20 @@ def process_input(source: str) -> list:
     chunks = chunk_audio(wav_path)
     print(f"Audio ready — {len(chunks)} chunk(s) created.")
     return chunks
+
+
+
+import shutil
+import subprocess
+
+print("Node path:", shutil.which("node"))
+
+if shutil.which("node"):
+    print(
+        "Node version:",
+        subprocess.run(
+            ["node", "--version"],
+            capture_output=True,
+            text=True
+        ).stdout
+    )
