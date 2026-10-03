@@ -25,7 +25,6 @@ def download_youtube_audio(url :str) ->str:
         filename = ydl.prepare_filename(info).replace(".webm", ".wav").replace(".m4a", ".wav")
     return filename
 
-data= download_youtube_audio("https://www.youtube.com/watch?v=7HSSR1n8dgc")
 
 
 def convert_to_wav(input_path: str) -> str:
